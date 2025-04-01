@@ -1,0 +1,141 @@
+.roomSlider {
+  padding: var(--spacing-xxxl);
+  text-align: center;
+  background-color: var(--bg-primary);
+}
+
+.roomSlider h1 {
+  font-size: var(--text-l);
+  margin-bottom: var(--spacing-xxs);
+}
+
+.roomSlider p {
+  font-size: var(--text-s);
+  margin-bottom: var(--spacing-md);
+  color: var(--text-light);
+}
+
+.card {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--bg-border-cards);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-s);
+  margin: 0 var(--space-2);
+  box-shadow: 0 var(--space-1) var(--space-2) rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 95% !important;
+}
+
+.cardImage {
+  width: 100%;
+  height: 12.5rem;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-xxs);
+}
+
+.card h3 {
+  font-size: var(--text-md);
+  margin-bottom: var(--spacing-xxs);
+}
+
+.card p {
+  font-size: var(--text-xs);
+  color: var(--text-ligher);
+  margin-bottom: var(--spacing-xxs);
+}
+
+.featuresContainer {
+  margin-bottom: var(--spacing-xxs);
+}
+
+.feature-icon {
+  font-size: var(--text-s);
+  margin-right: var(--space-1);
+  color: var(--btn-primary-bg);
+}
+
+.feature-with-icon {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+  font-size: var(--text-xxs);
+}
+
+.price {
+  font-size: var(--text-md);
+  font-weight: bold;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-xxs);
+}
+
+.featureText {
+  font-size: var(--text-xxs);
+  color: var(--text-ligher);
+  text-align: center;
+}
+
+
+.bookButton {
+  background-color: var(--btn-primary-bg);
+  color: var(--text-primary);
+  border: none;
+  padding: var(--space-3) var(--spacing-xs);
+  border-radius: var(--radius-s);
+  font-size: var(--text-xs);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: var(--spacing-xxs);
+  width: 100%;
+}
+
+.bookButton:hover {
+  background-color: var(--btn-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 var(--space-1) var(--space-2) rgba(0, 0, 0, 0.1);
+}
+
+.bookButton:active {
+  transform: translateY(0);
+}
+
+.customArrow {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  z-index: 9999;
+  background-color: var(--btn-primary-bg) !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  opacity: 1 !important;
+}
+
+.customArrow::before {
+  font-family: "Material Symbols Outlined";
+  font-size: var(--text-md);
+  color: var(--text-primary);
+}
+
+.prevArrow::before {
+  content: "chevron_left" !important;
+}
+
+.nextArrow::before {
+  content: "chevron_right" !important;
+}
+
+.slick-slide > div {
+  margin: 0 var(--space-2);
+}
+
+.slick-list {
+  padding: 0 var(--spacing-xxs);
+}
+
+@media (max-width: 576px) {
+  .roomSlider {
+    padding: var(--spacing-xxl) var(--spacing-s);
+  }
+}

@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inria Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body, h1, h2, h3, p{
+  padding: 0;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+a{
+  display: block;
+  text-decoration: none;
+}
+
+input[type="submit"]{
+  opacity: 1;
+  appearance: none;
+  -moz-appearance: none;
+}
+
+
+
+
+:root{
+
+  /* -----------------------Color Buttons ------------------------------ */
+
+  --btn-primary-bg: #663c3c;
+  --btn-primary-hover: #422216;
+
+
+  /* -----------------------Text Colors ------------------------------ */
+
+  --text-primary: #ffffff;      
+  --text-secondary: #111010;
+  --text-light: #656262;
+  --text-dark: #333;
+  --text-ligher: #777;
+
+
+  /* ----------------------Background Color------------------------------*/
+
+  --bg-primary: #fcfaf6;
+  --bg-secondary: #f0ece5;
+  --bg-navbar:#ece1cd;
+  --bg-border-cards: #ddd;
+  --bg-footer: #311919;
+  --bg-tertiary: #ffffff;
+
+
+  /* -----------------------Text Size -----------------------------------*/
+
+  --text-xxs: 0.9rem;
+  --text-xs: 1rem;
+  --text-s: 1.2rem;
+  --text-md: 1.5rem;  /* 24px */
+  --text-l: 2.5rem;
+  --text-xl: 3rem;
+  --text-xxl: 3.5rem; /* 56px */
+  --text-xxxl: 3.75rem;
+  --text-navbar: 1.25rem;
+
+
+  /* ----------------------Space Size---------------------------------------- */
+  
+  --spacing-xxs: 1rem;
+  --spacing-xs: 1.25rem;
+  --spacing-s: 1.5rem;
+  --spacing-md: 2rem;    
+  --spacing-xl: 2.5rem;
+  --spacing-xxl: 3rem;
+  --spacing-xxxl: 5rem;
+
+  
+  /*------------------------Small Spacing-------------------------------  */
+  --space-1: 0.25rem;    /* 4px */
+  --space-2: 0.5rem;     /* 8px */
+  --space-3: 0.75rem;     /* 12px */
+  
+  --max-width-container: 75rem; /* 1200px */
+  --max-height-image: 31.25rem; /* 500px */
+
+
+  /* ----------------------Border Radius-------------------------------- */
+  --radius-s: 0.313rem;
+  --radius-md: 0.5rem;    /* 8px */
+  --radius-lg: 0.75rem;   /* 12px */
+  --radius-xl: 1rem;      /* 16px */
+  --radius-xxl: 1.25rem;
+} 

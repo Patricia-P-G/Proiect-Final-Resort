@@ -1,0 +1,106 @@
+.bookingSection {
+  background-color: var(--bg-primary);
+  padding: var(--spacing-md) var(--spacing-md);
+  width: 100%;
+}
+
+.bookingContent {
+  display: flex;
+  margin: 0 auto;
+  gap: var(--spacing-xxl);
+  align-items: center;
+}
+
+.bookingFormContainer {
+  flex: 1;
+  padding: var(--spacing-md) var(--spacing-xxxl);
+}
+
+.bookingTitle{
+  font-size: var(--text-l);
+}
+
+.bookingForm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xxs);
+}
+
+.bookingForm div {
+  flex: 1 1 calc(50% - 1rem);
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: var(--space-3);
+  font-weight: 500;
+  color: var(--text-dark);
+  font-size: var(--text-xs);
+}
+
+.formGroup input,
+.formGroup select {
+  width: 100%;
+  padding: var(--spacing-xxs) var(--spacing-xs);
+  border: 0.063rem solid var(--bg-border-cards);
+  border-radius: var(--radius-md);
+  font-size: var(--text-xs);
+  transition: all 0.3s ease;
+  background-color: var(--bg-tertiary);
+}
+
+.formGroup input:focus,
+.formGroup select:focus {
+  outline: none;
+  border-color: var(--btn-primary-hover);
+  box-shadow: 0 0 0 3px rgba(179, 139, 88, 0.1);
+}
+
+.bookNowButton {
+  background-color: var(--btn-primary-bg);
+  color: var(--text-primary);
+  padding: var(--spacing-xxs);
+  width: 100%;
+  border: none;
+  border-radius: var(--radius-s);
+  margin-top: var(--spacing-xxs);
+  cursor: pointer;
+  font-size: var(--text-s);
+}
+
+.bookNowButton:hover{
+  background-color: var(--btn-primary-hover);
+  transition: all 0.3s ease;
+}
+
+.bookingImageContainer {
+  flex: 1;
+}
+
+.bookingImage {
+  width: 100%;
+  border-radius: var(--radius-md);
+  box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.1);
+}
+
+
+@media (max-width: 992px) {
+  .bookingContent {
+    flex-direction: column;
+    padding: 0 var(--spacing-xxs);
+    gap: var(--spacing-md);
+  }
+  
+  .bookingForm div {
+    flex: 1 1 100%;
+  }
+  
+  .bookingFormContainer {
+    padding: var(--spacing-s);
+    margin-top: -3rem;
+  }
+  
+  .bookingImageContainer {
+    padding-top: 0;
+  }
+}

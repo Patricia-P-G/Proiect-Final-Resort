@@ -1,0 +1,253 @@
+.roomContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-md);
+}
+
+.roomsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.roomCard {
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 var(--space-1) var(--space-2) rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.roomCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 var(--space-2) var(--spacing-xxs) rgba(0, 0, 0, 0.15);
+}
+
+.cardImage {
+  width: 100%;
+  height: 12.5rem;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: var(--spacing-s);
+}
+
+.roomCard h3 {
+  margin: 0 0 var(--spacing-xxs);
+  font-size: var(--text-s);
+  color: var(--text-dark);
+}
+
+.price {
+  font-size: var(--text-md);
+  font-weight: bold;
+  color: var(--btn-primary-bg);
+  margin-bottom: var(--spacing-xxs);
+}
+
+.featuresList li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+  font-size: var(--text-xxs);
+}
+
+.featureIcon {
+  font-size: var(--text-s);
+  color: var(--btn-primary-bg);
+}
+
+.roomDetail {
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.backButton {
+  background: none;
+  border: none;
+  padding: var(--spacing-xxs);
+  cursor: pointer;
+  font-size: var(--text-xs);
+  color: var(--btn-primary-bg);
+  display: flex;
+  align-items: center;
+}
+
+.detailContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-s);
+}
+
+.imageSlider {
+  width: 37.5rem; 
+  height: 31.25rem;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  position: relative;
+}
+
+.detailImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.detailInfo {
+  flex: 1;
+  padding: var(--spacing-md);
+  min-width: 0;
+}
+
+.detailInfo h2 {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-xxs);
+  color: var(--text-dark);
+}
+
+.detailDescription {
+  font-size: var(--text-xs);
+  line-height: 1.6;
+  color: var(--text-light);
+  margin-bottom: var(--spacing-md);
+}
+
+.detailFeatures {
+  margin-bottom: var(--spacing-md);
+}
+
+.detailFeatures h3 {
+  font-size: var(--text-s);
+  margin-bottom: var(--spacing-xxs);
+  color: var(--text-dark);
+}
+
+.detailFeatures ul {
+  list-style: none;
+  padding: 0;
+}
+
+.detailFeatures li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+  font-size: var(--text-xs);
+}
+
+.priceSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-2);
+}
+
+.detailPrice {
+  font-size: var(--spacing-md);
+  font-weight: bold;
+  color: var(--btn-primary-bg);
+}
+
+.priceNote {
+  font-size: var(--spacing-xxs);
+  color: var(--text-ligher);
+}
+
+.bookButton {
+  padding: var(--space-3) var(--spacing-md);
+  background-color: var(--btn-primary-bg);
+  color: var(--bg-tertiary);
+  border: none;
+  border-radius: var(--radius-s);
+  font-size: var(--text-xs);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: var(--spacing-xxs);
+}
+
+.bookButton:hover {
+  background-color: var(--btn-primary-hover);
+  transform: translateY(-2px);
+}
+
+.sliderArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--bg-tertiary);
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  font-size: var(--text-s);
+}
+
+.sliderArrow:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.sliderDots {
+  position: absolute;
+  bottom: var(--spacing-xs);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: var(--space-3);
+}
+
+.dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.activeDot {
+  background: var(--bg-primary);
+}
+
+@media (min-width: 768px) {
+  .detailContent {
+    flex-direction: row;
+  }
+  
+  .detailInfo {
+    width: 50%;
+  }
+  
+  .roomsGrid {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+}
+
+@media (max-width: 992px) {
+  .detailContent {
+    flex-direction: column;
+  }
+  
+  .imageSlider {
+    width: 100%;
+    height: auto;
+    max-height: 25rem; 
+    margin-bottom: var(--spacing-s)
+  }
+  
+  .detailInfo {
+    width: 100%;
+    padding: var(--spacing-md);
+  }
+}
