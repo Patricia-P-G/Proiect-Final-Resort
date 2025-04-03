@@ -164,8 +164,7 @@ export default function RoomCards() {
                 <span className={styles.priceNote}>per night</span>
                 <button
                   className={styles.bookButton}
-                  onClick={() => window.location.href = "https://www.booking.com"}
-                  
+                  onClick={() => window.open("https://www.booking.com", "_blank")}
                 >
                   Book Now
                 </button>

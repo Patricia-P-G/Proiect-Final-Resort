@@ -95,7 +95,7 @@ export default function RoomSlider() {
             <div className={styles.price}>{room.price}</div>
             <button
               className={styles.bookButton}
-              onClick={() => (window.location.href = "https://www.booking.com")}
+              onClick={() => window.open("https://www.booking.com", "_blank")}
             >
               Book Now
             </button>
