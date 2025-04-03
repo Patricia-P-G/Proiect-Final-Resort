@@ -59,7 +59,7 @@ export default function Footer() {
         </div>
       </div>
       <div className={styles.footerBottom}>
-        <p>&copy; {new Date().getFullYear()} Sunseet Breeze Resort. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Sunset Breeze Resort. All rights reserved.</p>
       </div>
     </footer>
   );

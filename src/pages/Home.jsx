@@ -4,7 +4,6 @@ import ResortSection from "../components/ResortSection";
 import Facilities from "../components/Facilities";
 import RoomSlider from "../components/RoomSlider";
 import VideoSection from "../components/VideoSection";
-import BookingSection from "../components/BookingForm";
 import Footer from "../components/Footer";
 import heroImage from "../assets/img-main/hero-main.png"
 
@@ -26,7 +25,6 @@ function Home() {
       <Facilities />
       <RoomSlider />
       <VideoSection />
-      <BookingSection />
       <Footer />
     </div>
   );

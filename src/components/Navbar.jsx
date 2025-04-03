@@ -85,7 +85,7 @@ export default function Navbar() {
       <div className={styles["navbar-book"]}>
         <button
           className={styles["book-button"]}
-          onClick={() => navigate("/book-now")}
+          onClick={() => window.location.href = "https://www.booking.com"}
         >
           Book Now
         </button>

@@ -29,7 +29,7 @@ export default function ScrollToTop() {
       aria-label="Scroll to top"
       title="Go to top"
     >
-      <span class="material-symbols-outlined">arrow_upward</span>
+      <span className="material-symbols-outlined">arrow_upward</span>
     </button>
   );
 }
