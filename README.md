@@ -1,32 +1,4 @@
-# React template for final project
+This is my React Resort Booking App, created as part of the web development course at IT School. The project focuses on the rebranding of The Racha resort’s online booking platform. On the site, users can browse and book accommodations, explore resort amenities and view detailed room descriptions with images. 
 
-This template was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm install`
-Installs all the dependencies needed for the project.
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
+The project is deployed here: https://sunset-breeze-resort.netlify.app/
